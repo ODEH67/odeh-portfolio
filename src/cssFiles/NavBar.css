@@ -72,14 +72,14 @@
 
 }
 
-.contactBtn:hover {
+.contactBtn:hover, .contactBtn2:hover {
     color: black;
     background-color: rgba(122, 250, 237, 0.874);
     transition: background-color 0.2s ease;
     transition-delay: 0.1s;
 }
 
-.contactBtn:active {
+.contactBtn:active, .contactBtn2:active {
     color: black;
     background-color: rgba(0, 197, 177, 0.792);
     transition-delay: 0s;
@@ -95,9 +95,20 @@
         display: block;
         background-color: transparent;
         color:white;
-        padding: 0.5em;
+        margin: 0.5em;
         cursor: pointer;
         font-size: 2em;
+    }
+
+    .menu-icon:hover{
+        color: rgba(122, 250, 237, 0.874);
+        transition: color 0.2s ease;
+        transition-delay: 0.1s;
+    }
+
+    .menu-icon:active{
+        color: rgba(0, 197, 177, 0.792);
+        transition-delay: 0s;
     }
 
     .navBar ul {
