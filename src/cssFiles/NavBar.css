@@ -1,0 +1,138 @@
+
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100vw; */
+    max-width: 80rem;
+    margin: 0 auto;
+    /* position: sticky;
+    top: 0;
+    z-index: 3; */
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.NavBar-logo {
+    /* object-fit: cover; */
+    width: 10em;
+}
+
+.NavText {
+    color: white;
+    margin: 0em 1.5em;
+    font-size: 1.1em;
+}
+
+.NavText:hover {
+    color: rgba(0, 255, 229, 0.905);
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid rgba(0, 255, 229, 0.905);
+    transition: border-bottom 0.2s ease, color 0.2s ease;
+    transition-delay: 0.1s;
+}
+
+.NavText:active {
+    color: rgba(0, 197, 177, 0.905);
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid rgba(0, 197, 177, 0.905);
+    transition-delay: 0s;
+}
+
+.NavText.selected {
+    color: rgba(0, 255, 229, 0.905);
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid rgba(0, 255, 229, 0.905);
+}
+
+.contactBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border: none;
+    border-radius: 4em 2em 3em 0em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.contactBtn2{
+    display: none;
+
+}
+
+.contactBtn:hover {
+    color: black;
+    background-color: rgba(122, 250, 237, 0.874);
+    transition: background-color 0.2s ease;
+    transition-delay: 0.1s;
+}
+
+.contactBtn:active {
+    color: black;
+    background-color: rgba(0, 197, 177, 0.792);
+    transition-delay: 0s;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 830px) {
+
+    .menu-icon {
+        display: block;
+        background-color: transparent;
+        color:white;
+        padding: 0.5em;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    .navBar ul {
+        display: none;
+    }
+
+    .NavMiddle.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #333;
+        border: 2px solid  rgba(0, 197, 177, 0.792);
+        border-radius: 0.9em 0em 0.9em 0em;
+        position: absolute;
+        top: 70px;
+        right:3%;
+        width: 9rem;
+    }
+
+    .NavMiddle li {
+        padding: 10px;
+    }
+
+    .contactBtn {
+        display: none;
+    }
+
+    .contactBtn2 {
+        display: block;
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0em 0em 0em 1.1em;
+    }
+
+    }
