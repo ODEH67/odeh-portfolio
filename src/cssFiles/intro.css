@@ -1,0 +1,64 @@
+.intro-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap-reverse;
+    padding: 7rem 1em 5em 1rem;
+}
+
+
+.intro-text-dev h1{
+    font-size: 3em;
+}
+
+.intro-text-dev p{
+    font-weight: 300;
+    font-size: 0.9em;
+    padding-top: 0.5em;
+}
+
+.intro-photo {
+    width: 20em;
+}
+
+
+#span-special-color{
+    color: rgb(0, 249, 224);
+}
+
+
+@media screen and (max-width: 830px) {
+
+    .intro-photo {
+        width: 15em;
+    }
+
+    .intro-section {
+        padding-top: 5em;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .intro-section {
+        gap: 0em;
+    }
+
+    .intro-text-dev {
+        position: absolute;
+        bottom: 0em;
+        
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .intro-section{
+        font-size: 4.5vw;
+    }
+
+}
