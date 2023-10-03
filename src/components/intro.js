@@ -11,7 +11,7 @@ export default function Intro() {
                 <h4>Hallo,</h4>
                 <h1>Ich bin <span id='span-special-color'>Odeh</span></h1>
                 <h1>Web &lt;Dev&gt;</h1>
-                <p>whatever blbalbalbabla b lbab lab balbaalb rt blab<br/> er a sdfsd sdgs e labl b lab lalblabal  </p>
+                <p>whatever blbalbalbabla b lbab lab balbaalb rt blab<br/> er a sdfsd sdgs e labl b lab rtrgdfghblabal  </p>
             </div>
             <img className='intro-photo' src={myPhoto} alt='none'/>
         </section>
