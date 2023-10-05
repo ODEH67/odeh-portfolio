@@ -1,4 +1,4 @@
-import myPhoto from '../img/myPhoto.og1.png';
+import myPhoto from '../img/myPhoto.og11.png';
 import '../cssFiles/intro.css';
 
 
