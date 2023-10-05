@@ -6,61 +6,18 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+padding: 1em;
 }
 
-#EXPERTISE, #TEAM {
-    padding-bottom: 0.5em;
-}
 
 h4 {
     padding: 1.5em 0em 1em 0em;
 }
 
-
-#expertise-table-1 {
-    /* border-right: 1.5px solid rgb(189, 189, 189); */
-    width: 22em;
-    height: 15em;
-    padding: 3em 2em;
+#expertise-text-p {
+    padding-top: 2em;
 }
 
-#expertise-table-2 {
-    border-right: 1.5px solid rgb(229, 229, 229);
-    border-left: 1.5px solid rgb(229, 229, 229);
-    width: 22em;
-    height: 15em;
-    padding: 3em 2em;
-}
-
-#expertise-table-3 {
-    /* border-bottom: 1.5px solid rgb(189, 189, 189); */
-    width: 22em;
-    height: 15em;
-    padding: 3em 2em;
-}
-
-#expertise-table-4 {
-    border-top: 1.5px solid rgb(229, 229, 229);
-    width: 22em;
-    height: 15em;
-    padding: 3em 2em;
-}
-
-#expertise-table-5 {
-    border-top: 1.5px solid rgb(229, 229, 229);
-    border-left: 1.5px solid rgb(229, 229, 229);
-    border-right: 1.5px solid rgb(229, 229, 229);
-    width: 22em;
-    height: 15em;
-    padding: 3em 2em;
-}
-
-#expertise-table-6 {
-    border-top: 1.5px solid rgb(229, 229, 229);
-    width: 22em;
-    height: 15em;
-    padding: 52px 2em;
-}
 
 #expertise-row-1, #expertise-row-2 {
     display: flex;
@@ -71,12 +28,57 @@ h4 {
     list-style: none;
 }
 
-@media (max-width: 1072px) {
-    #expertise-row-1 li, #expertise-row-2 li {
-        border: 0;
-        border-bottom: 1px solid rgb(229, 229, 229);
-        }
+#expertise-row-1 li, #expertise-row-2 li {
+    width:15em;
+    padding: 3em 2em;
+    }
+
+#expertise-row-1{
+    border-bottom: 1px solid rgba(0, 255, 229, 0.905);
+    }
+
+
+#expertise-table-2 img, #expertise-table-3 img {
+    width: 3em;
 }
+
+#expertise-table-4 img, #expertise-table-5 img {
+    width: 5em;
+}
+
+#expertise-table-1 img, #expertise-table-6 img {
+    width: 4em;
+}
+
+#expertise-table-7 img, #expertise-table-8 img {
+    width: 6em;
+}
+
+
+@media (max-width: 1008px) {
+    
+    #expertise-row-1{
+    border-bottom: 0;
+    }
+
+    #expertise-row-1 li, #expertise-row-2 li {
+    width:20em;
+    }
+
+    #expertise-row-1 li, #expertise-row-2 li:not(:last-child):not(:nth-last-child(2)) {
+        border-bottom: 1px solid rgba(0, 255, 229, 0.905);
+        }
+
+        .expertise-dev{
+        text-align: center;
+    }
+}
+
+@media (max-width: 671px) {
+    #expertise-row-2 li:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 255, 229, 0.905);
+    }
+    }
 
 @media (max-width: 610px) {
 .expertise-section{
@@ -103,5 +105,6 @@ h4 {
     .expertise-section{
         font-size: 4.5vw;
     }
+
 
 }

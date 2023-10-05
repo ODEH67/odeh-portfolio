@@ -181,3 +181,9 @@
             right:4%;
     }
 }
+
+@media screen and (max-width: 170px) {
+    .NavBar-logo{
+        width: 30vw;
+    }
+}
