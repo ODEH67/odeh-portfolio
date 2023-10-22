@@ -7,51 +7,68 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 1em;
+text-align: center;
 }
 
-
+/* 
 h4 {
-    padding: 1.5em 0em 1em 0em;
-}
+    padding: 1em 0em 1em;
+} */
 
 #expertise-text-p {
     padding-top: 2em;
 }
 
 
+/* .expertise-menu{
+    display:grid;
+    grid-template-columns:;
+} */
+
+
 #expertise-row-1, #expertise-row-2 {
-    display: flex;
-    flex-direction: row;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     /* align-items: baseline; */
-    flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     list-style: none;
 }
 
+
 #expertise-row-1 li, #expertise-row-2 li {
-    width:15em;
-    padding: 3em 2em;
+    width: 7em;
+    padding: 3em 0em 1.3em;
+    margin: 0em 1em;
     }
 
-#expertise-row-1{
-    border-bottom: 1px solid rgba(0, 255, 229, 0.905);
+
+#expertise-row-1 li:not(:first-child){
+    border-bottom: 3px solid rgba(0, 255, 229, 0.905);
     }
 
 
 #expertise-table-2 img, #expertise-table-3 img {
     width: 3em;
+    padding-bottom: 0.5em;
 }
+
 
 #expertise-table-4 img, #expertise-table-5 img {
     width: 5em;
+    padding-bottom: 0.5em;
 }
+
 
 #expertise-table-1 img, #expertise-table-6 img {
-    width: 4em;
+    width: 4.5em;
+    padding-bottom: 0.5em;
 }
 
+
 #expertise-table-7 img, #expertise-table-8 img {
-    width: 6em;
+    width: 6.5em;
+    padding-bottom: 0.5em;
 }
 
 
@@ -65,28 +82,34 @@ h4 {
     border-bottom: 0;
     }
 
-    #expertise-row-1 li, #expertise-row-2 li {
+    #expertise-row-1, #expertise-row-2 {
+
+        display: grid;
+        grid-template-areas: "row1 row1 row1 . row1";
+        grid-template-columns: repeat(3,1fr);
+        grid-area: row1;
+    } 
+
+    /* #expertise-row-1 li, #expertise-row-2 li {
     width:20em;
-    }
+    } */
 
-    #expertise-row-1 li, #expertise-row-2 li:not(:last-child):not(:nth-last-child(2)) {
+    /* #expertise-row-1 li, #expertise-row-2 li:not(:last-child):not(:nth-last-child(2)) {
         border-bottom: 1px solid rgba(0, 255, 229, 0.905);
-        }
+        } */
 
-        .expertise-dev{
-        text-align: center;
-    }
 }
 
 @media (max-width: 671px) {
     #expertise-row-2 li:not(:last-child) {
         border-bottom: 1px solid rgba(0, 255, 229, 0.905);
     }
+    h4 {
+        padding: 0em 0em 1em;
     }
 
-@media (max-width: 610px) {
 .expertise-section{
-    padding-top: 6em;
+    padding-top: 10em;
 }
 }
 
