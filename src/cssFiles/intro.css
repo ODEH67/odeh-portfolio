@@ -21,7 +21,7 @@
 }
 
 .intro-photo {
-    width: 20em;
+    width: 26em;
 }
 
 
@@ -33,7 +33,7 @@
 @media screen and (max-width: 830px) {
 
     .intro-photo {
-        width: 15em;
+        width: 20em;
     }
 
     .intro-section {
@@ -42,15 +42,20 @@
     }
 }
 
-@media screen and (max-width: 610px) {
+
+@media screen and (max-width: 671px) {
     .intro-section {
         gap: 0em;
     }
 
     .intro-text-dev {
         position: absolute;
-        bottom: 0em;
+        bottom: -5.5em;
         
+    }
+
+    .intro-photo {
+        width: 16em;
     }
 }
 
