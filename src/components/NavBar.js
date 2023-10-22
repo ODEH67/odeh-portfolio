@@ -43,7 +43,7 @@ export default function NavBar() {
               <NavLink 
                 className={`NavText${selectedNavText === 'Home' ? ' selected' : ''}`} 
                 onClick={() => setSelectedNavText('Home')} 
-                to="/">
+                to="#">
                   Home
               </NavLink>
             </li>
@@ -51,7 +51,7 @@ export default function NavBar() {
               <NavLink 
                 className={`NavText${selectedNavText === 'About' ? ' selected' : ''}`} 
                 onClick={() => setSelectedNavText('About')} 
-                to="/contact">
+                to="#">
                   About
               </NavLink>
             </li>
@@ -59,27 +59,27 @@ export default function NavBar() {
               <NavLink 
                 className={`NavText${selectedNavText === 'Projects' ? ' selected' : ''}`} 
                 onClick={() => setSelectedNavText('Projects')} 
-                to="/contact">
+                to="#">
                   Projects
               </NavLink>
             </li>
             <li>
               <NavLink 
-                className={`NavText${selectedNavText === 'Portfolio' ? ' selected' : ''}`} 
-                onClick={() => setSelectedNavText('Portfolio')} 
-                to="/contact">
-                  Portfolio
+                className={`NavText${selectedNavText === 'Lebenslauf' ? ' selected' : ''}`} 
+                onClick={() => setSelectedNavText('Lebenslauf')}
+                to="#">
+                  Lebenslauf
               </NavLink>
             </li>
             <li >
               <span className='contactBtn2'>
-                Contact Me
+                Kontakt
               </span>
             </li>
           </ul>
           <button className='contactBtn'>
             <TbMessage style={{fontSize: "18px"}}/>
-            Contact Me
+            Kontakt
           </button>
         </nav>
       </header>
