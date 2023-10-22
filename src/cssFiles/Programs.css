@@ -55,8 +55,12 @@ h4 {
 }
 
 
-@media (max-width: 1008px) {
+@media (max-width: 992px) {
     
+    .expertise-dev{
+        padding: 1.1em;
+        }
+
     #expertise-row-1{
     border-bottom: 0;
     }
