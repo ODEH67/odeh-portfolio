@@ -2,6 +2,7 @@
     padding-top: 2em;
 }
 
+
 .expertise-dev{
 display: flex;
 flex-direction: column;
@@ -10,108 +11,156 @@ padding: 1em;
 text-align: center;
 }
 
-/* 
-h4 {
-    padding: 1em 0em 1em;
-} */
 
 #expertise-text-p {
-    padding-top: 2em;
+    padding-top: 3em;
 }
-
-
-/* .expertise-menu{
-    display:grid;
-    grid-template-columns:;
-} */
 
 
 #expertise-row-1, #expertise-row-2 {
 
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    /* align-items: baseline; */
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    justify-content: end;
     list-style: none;
 }
 
+/* #expertise-row-1{
+    padding-left:5.5em;
+} */
+
+.expertise-dev-1, .expertise-dev-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content:center;
+    gap: 1em;
+
+}
 
 #expertise-row-1 li, #expertise-row-2 li {
-    width: 7em;
-    padding: 3em 0em 1.3em;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 0em 1em;
     margin: 0em 1em;
+    gap: 2em;
+    }
+
+    .expertise-img-div-1 , .expertise-img-div-2 ,.expertise-img-div-3 ,.expertise-img-div-4{
+        width: 7em;
+        height: 5.5em;
+        /* margin: auto; */
+    }
+
+    .expertise-img-div-1, .expertise-img-div-2 {
+    border-bottom: 2px solid aquamarine;
     }
 
 
-#expertise-row-1 li:not(:first-child){
-    border-bottom: 3px solid rgba(0, 255, 229, 0.905);
+    .expertise-menu {
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-menu h4{
+        min-width: 11em;
+        text-align: end;
+        padding-right: 10px;
+    }
+
+#img2, #img3 {
+    width: 2.5em;
+    padding-bottom: 0.5em;
+    margin: auto;
+
+}
+
+
+#img4, #img5 , #img6{
+    width: 4em;
+    padding-bottom: 0.5em;
+    margin: auto;
+}
+
+
+#img1 {
+    height: 4em;
+    padding-bottom: 0.5em;
+    margin: auto;
+
+}
+
+
+#img7, #img8 {
+    height: 4em;
+    padding-bottom: 0.5em;
+    margin: auto;
+
+}
+
+@media (max-width: 799px) {
+
+    #expertise-table-2 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.905);
+    }
+
+    .expertise-dev-1 {
+        margin-bottom: 2em;
+        gap: 0;
+    }
+
+    .expertise-dev-2 {
+        gap: 0;
     }
 
 
-#expertise-table-2 img, #expertise-table-3 img {
-    width: 3em;
-    padding-bottom: 0.5em;
-}
-
-
-#expertise-table-4 img, #expertise-table-5 img {
-    width: 5em;
-    padding-bottom: 0.5em;
-}
-
-
-#expertise-table-1 img, #expertise-table-6 img {
-    width: 4.5em;
-    padding-bottom: 0.5em;
-}
-
-
-#expertise-table-7 img, #expertise-table-8 img {
-    width: 6.5em;
-    padding-bottom: 0.5em;
-}
-
-
-@media (max-width: 1008px) {
-    
-    .expertise-dev{
-        padding: 1.1em;
+    .expertise-img-div-1, .expertise-img-div-3 {
+        border-bottom: 2px solid aquamarine;
         }
+    
 
-    #expertise-row-1{
-    border-bottom: 0;
+    .expertise-img-div-2 ,.expertise-img-div-4  {
+        border-bottom: none;
+    }
+
+    .expertise-menu h4{
+        min-width: 11em;
+        text-align: end;
+        padding-right: none;
+        margin-left: 5em;
+    }
+}
+
+@media (max-width: 671px) {
+    .expertise-section {
+        padding-top: 13em;
     }
 
     #expertise-row-1, #expertise-row-2 {
 
-        display: grid;
-        grid-template-areas: "row1 row1 row1 . row1";
-        grid-template-columns: repeat(3,1fr);
-        grid-area: row1;
-    } 
-
-    /* #expertise-row-1 li, #expertise-row-2 li {
-    width:20em;
-    } */
-
-    /* #expertise-row-1 li, #expertise-row-2 li:not(:last-child):not(:nth-last-child(2)) {
-        border-bottom: 1px solid rgba(0, 255, 229, 0.905);
-        } */
-
-}
-
-@media (max-width: 671px) {
-    #expertise-row-2 li:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 255, 229, 0.905);
-    }
-    h4 {
-        padding: 0em 0em 1em;
+        flex-direction: column;
+        list-style: none;
     }
 
-.expertise-section{
-    padding-top: 10em;
+    .expertise-dev-1,.expertise-dev-2 {
+        
+        flex-direction: column;
+    }
+
+    .expertise-menu h4{
+        min-width: 11em;
+        text-align: start;
+        margin-left: 0;
+        white-space: nowrap;
+
+    }
 }
-}
+
 
 /* @media (max-width: 400px) {
 
