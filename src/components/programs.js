@@ -17,60 +17,48 @@ export default function Programs() {
             <div className="expertise-dev">
                 <h1 className="expertise-text-h1">About Me</h1>
                 <p id="expertise-text-p">quick description ahfgh fhsrtzj ssrthr srth rh sr rthftth tzhrthrhr rthrth  rt tjzhh hrththt</p>
-                <ul class="expertise-menu">
+                <ul className="expertise-menu">
                     <div id="expertise-row-1">
-                        <li id="expertise-table-1">
-                            {/* <img src={Html} alt="Html"/> */}
                             <h4>Frontend :</h4>
-                            {/* <p>This Website was made by Odeh Lorem,sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-1">
-                            <img src={Html} alt="Html"/>
-                            {/* <h4>HTML</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem,sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-2">
-                            <img src={Css} alt="Css"/>
-                            {/* <h4>CSS</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-3">
-                            <img src={JavaScript} alt="JavaScript"/>
-                            {/* <h4>JavaScript</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-4">
-                            <img src={Reacto} alt="React"/>
-                            {/* <h4>React</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
+                        <div className='expertise-dev-1'>
+                            <li id="expertise-table-1">
+                                <div className='expertise-img-div-1'>
+                                    <img id='img1' src={Html} alt="Html"/>
+                                </div>
+                                <div className='expertise-img-div-1'>
+                                    <img id='img2' src={Css} alt="Css"/>    
+                                </div>
+                            </li>
+                            <li id="expertise-table-2">
+                                <div className='expertise-img-div-2'>
+                                    <img id='img3' src={JavaScript} alt="JavaScript"/>
+                                </div>
+                                <div className='expertise-img-div-2'>
+                                    <img id='img4' src={Reacto} alt="React"/>
+                                </div>
+                            </li>
+                        </div>
                     </div>
                     <div id="expertise-row-2">
-                        <li id="expertise-table-5">
-                            {/* <img src={NodeJs} alt="NodeJs"/> */}
                             <h4>Backend & DataBase :</h4>
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-5">
-                            <img src={NodeJs} alt="NodeJs"/>
-                            {/* <h4>NodeJs</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-6">
-                            <img src={MongoDB} alt="MongoDB"/>
-                            {/* <h4>MongoDB</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-7">
-                            <img src={Mongoose} alt="Mongoose"/>
-                            {/* <h4>Mongoose</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem,sequi This Website was made by Odeh</p> */}
-                        </li>
-                        <li id="expertise-table-8">
-                            <img src={ExpressJs} alt="expressJs"/>
-                            {/* <h4>Express.Js</h4> */}
-                            {/* <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p> */}
-                        </li>
+                        <div className="expertise-dev-2">
+                            <li id="expertise-table-3">
+                                <div className='expertise-img-div-3'>
+                                    <img id='img5' src={NodeJs} alt="NodeJs"/>
+                                </div>
+                                <div className='expertise-img-div-3'>
+                                    <img id='img6' src={MongoDB} alt="MongoDB"/>
+                                </div>
+                            </li>
+                            <li id="expertise-table-4">
+                                <div className='expertise-img-div-4'>
+                                    <img id='img7' src={Mongoose} alt="Mongoose"/>
+                                </div>
+                                <div className='expertise-img-div-4'>
+                                    <img id='img8' src={ExpressJs} alt="expressJs"/>
+                                </div>
+                            </li>
+                        </div>
                     </div>
                 </ul>
             </div>
