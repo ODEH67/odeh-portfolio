@@ -1,0 +1,120 @@
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right:  2em;
+}
+
+#form-title {
+    padding: 2.2em 0em 2em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-box {
+    min-height: 3em;
+    padding-left: 1em;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 255, 229, 0.905);
+    color:white;
+    font-size: 18px;
+}
+
+#message-box {
+    max-width: 30em;
+    min-width: 30em;
+    max-height: 13em;
+    min-height: 5em;
+    padding: 1em;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 255, 229, 0.905);
+    color: white;
+    font-size: 18px;
+
+    }
+
+
+    .button-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2em 0;
+    }
+
+    
+    #SUBMIT {
+        padding: 0.7em 2em;
+        border: 2px solid;
+        color: rgba(0, 255, 229, 0.905);
+        border-color: rgba(0, 255, 229, 0.905);
+        border-radius: 3px;
+        background-color: transparent;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    #SUBMIT:hover {
+        color: rgb(165, 254, 254);
+        border-color: rgb(165, 254, 254);
+        cursor: pointer;
+    }
+    
+    #SUBMIT:active{
+        color: rgba(36, 137, 252, 0.66);
+        border-color: rgba(21, 127, 248, 0.562);
+        /* background-color: rgba(255, 255, 255, 0.059); */
+    }
+
+    #OR-BUTTON {
+        color: rgba(0, 255, 229, 0.905);
+    }
+
+    @media (max-width: 600px) {
+    #message-box {
+        max-width: 20em;
+        min-width: 20em;
+        max-height: 10em;
+        min-height: 4em;
+}
+
+@media (max-width: 450px) {
+    #message-box {
+        max-width: 16em;
+        min-width: 16em;
+        max-height: 8em;
+        min-height: 4em;
+}
+#form-box {
+    min-height: 2em;
+}
+}
+
+@media (max-width: 350px) {
+    .contact-section {
+        font-size: 4.5vw;
+}
+#message-box {
+    max-width: 80vw;
+    min-width: 80vw;
+    max-height: 45vw;
+    min-height: 25vw;
+    font-size: 5vw;
+    
+}
+#form-box {
+    width: 80vw;
+    min-height: 11vw;
+    font-size: 5vw;
+}
+#form-title {
+    padding-top: 1vw;
+}
+
+}
+}
