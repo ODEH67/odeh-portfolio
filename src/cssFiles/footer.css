@@ -1,0 +1,36 @@
+.footer-separator {
+    width: 90%;
+    border-color: rgb(0, 249, 224);
+}
+
+ 
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 3em 1em 1em;
+}
+
+.footer-div a {
+    list-style: none;
+    color: white;
+    padding: 5px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div a:hover {
+    color: rgba(0, 255, 229, 0.905);
+    transition-delay: 0.1s;
+}
+
+.footer-div a:active {
+    color: rgba(0, 197, 177, 0.905);
+    transition-delay: 0s;
+}

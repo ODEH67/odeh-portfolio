@@ -28,6 +28,7 @@
 #message-box {
     max-width: 30em;
     min-width: 30em;
+    height: 7em;
     max-height: 13em;
     min-height: 5em;
     padding: 1em;
