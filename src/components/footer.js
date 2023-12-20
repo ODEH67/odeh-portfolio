@@ -7,7 +7,7 @@ return (
     <section className="footer-section">
         <hr className="footer-separator"/>
             <div className="footer-div">
-            <NavLink href="https://www.ycombinator.com/apply/">Applications are open for YC Summer 2023</NavLink>
+            <span id='footer-head'>Applications are open for YC Summer 2023</span>
                 <span className="footer_NavLinks">
                     <NavLink to="https://news.ycombinator.com/newsguidelines.html" >Guidelines</NavLink> | 
                     <NavLink to="https://news.ycombinator.com/newsfaq.html" >FAQ</NavLink> | 
