@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;   
     padding: 3em 1em 1em;
+    font-size: 0.9em;
 }
 
 .footer-div a {
@@ -23,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0.6em;
 }
 
 .footer-div a:hover {
@@ -33,4 +35,34 @@
 .footer-div a:active {
     color: rgba(0, 197, 177, 0.905);
     transition-delay: 0s;
+}
+
+.footer_NavLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#footer-head {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-div {
+        padding: 0.6em 4em 0.6em;
+
+    }
+
+    .footer-section {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer-section {
+    font-size: 3.5vw;
+}
 }
