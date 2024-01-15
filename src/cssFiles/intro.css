@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 5em;
     flex-wrap: wrap-reverse;
-    padding: 7rem 1em 5em 1rem;
+    padding: 14rem 1em 1em 1rem;
 }
 
 
@@ -30,14 +30,14 @@
 }
 
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 831px) {
 
     .intro-photo {
         width: 20em;
     }
 
     .intro-section {
-        padding-top: 5em;
+        padding-top: 12em;
         gap: 1em;
     }
 }
@@ -50,7 +50,7 @@
 
     .intro-text-dev {
         position: absolute;
-        bottom: -5.5em;
+        bottom: -9.5em;
         
     }
 

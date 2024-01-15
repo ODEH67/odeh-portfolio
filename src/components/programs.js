@@ -13,7 +13,7 @@ export default function Programs() {
 
 
     return (
-        <section className="expertise-section">
+        <section className="expertise-section" id='About'>
             <div className="expertise-dev">
                 <h1 className="expertise-text-h1">About Me</h1>
                 <p id="expertise-text-p">quick description ahfgh fhsrtzj ssrthr srth rh sr rthftth tzhrthrhr rthrth  rt tjzhh hrththt</p>

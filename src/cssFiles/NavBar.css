@@ -5,13 +5,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* width: 100vw; */
-    max-width: 80rem;
-    margin: 0 auto;
-    /* position: sticky;
-    top: 0;
-    z-index: 3; */
-    padding-top: 0.8rem;
+    max-width: 85rem;
+    padding: 0.8rem 0 0.7em;
+    border-bottom: 4px solid rgba(0, 255, 229, 0.905);
+    width: 100%;
+    /* top: 0; */
+    /* margin: 0 auto; */
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%); /* Adjust for the width of .navBar */
+    z-index: 1;
+    background-color: rgb(14, 15, 35);
 }
 
 .navBar ul {
@@ -31,15 +35,16 @@
     color: white;
     margin: 0em 1.5em;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
-.NavText:hover {
+/* .NavText:hover {
     color: rgba(0, 255, 229, 0.905);
-    padding-bottom: 0.4em;
+    padding-bottom: 0.4em; */
     /* border-bottom: 3px solid rgba(0, 255, 229, 0.905); */
-    transition: border-bottom 0.2s ease, color 0.2s ease;
+    /* transition: border-bottom 0.2s ease, color 0.2s ease;
     transition-delay: 0.1s;
-}
+} */
 
 .NavText:active {
     color: rgba(0, 197, 177, 0.905);
@@ -61,9 +66,9 @@
     gap: 5px;
     background-color: white;
     color: black;
-    padding: 1em;
+    padding: 0.7em;
     border: none;
-    border-radius: 4em 2em 3em 0em;
+    border-radius: 2.5em 1.2em 2em 0em;
     font-weight: 600;
     cursor: pointer;
     margin-right: 2rem;
@@ -74,17 +79,22 @@
 
 }
 
-.contactBtn:hover, .contactBtn2:hover {
+
+/* .contactBtn:hover, .contactBtn2:hover {
     color: black;
     background-color: rgba(122, 250, 237, 0.874);
     transition: background-color 0.2s ease;
     transition-delay: 0.1s;
-}
+} */
 
 .contactBtn:active, .contactBtn2:active {
     color: black;
     background-color: rgba(0, 197, 177, 0.792);
     transition-delay: 0s;
+}
+
+.contactBtn.selected, .contactBtn2.selected{
+    background-color: rgba(0, 255, 229, 0.905);
 }
 
 .menu-icon {
@@ -152,6 +162,10 @@
         border-radius: 5px;
         cursor: pointer;
         margin: 0em 0em 0em 1.1em;
+    }
+
+    .contactBtn2.selected{
+        background-color: rgba(0, 255, 229, 0.905);
     }
 
     }
