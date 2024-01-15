@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
+  /* font-size: 1.01em; */ /* added to make the whole Site bigger*/
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   color: white;
   overflow: hidden;
   overflow-y: scroll;
+    /* font-size: 1.1rem; added to make the whole Site bigger */
 }
 
 code {

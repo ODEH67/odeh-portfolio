@@ -1,5 +1,5 @@
 .expertise-section{
-    padding-top: 2em;
+    padding-top: 10em;
 }
 
 
@@ -137,8 +137,10 @@ text-align: center;
 }
 
 @media (max-width: 671px) {
-    .expertise-section {
-        padding-top: 13em;
+
+
+    .expertise-dev{
+        padding-top: 8em;
     }
 
     #expertise-row-1, #expertise-row-2 {

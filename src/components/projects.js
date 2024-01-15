@@ -14,7 +14,7 @@ export default function Projects() {
 
 
     return (
-        <section className="projects-section">
+        <section className="projects-section" id="Projects">
             <div className="projects-dev">
                 <h1 className="projects-text-h1">Projects</h1>
                 {/* <p id="projects-text-p">quick description ahfgh fhsrtzj ssrthr srth rh sr rthftth tzhrthrhr rthrth  rt tjzhh hrththt</p> */}
@@ -65,7 +65,7 @@ export default function Projects() {
                             <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
                         </li>
                         <li id="projects-table-7">
-                            <div>
+                            <div id="Contact">
                                 <img src={Mongoose} alt="Mongoose"/>
                                 <h4>Cook-Book-React</h4>
                             </div>
