@@ -5,6 +5,9 @@
     align-items: center;
     padding-left: 2em;
     padding-right:  2em;
+    background-color: rgb(14, 15, 35);
+    margin: auto;
+    max-width: 110em;
 }
 
 #form-title {

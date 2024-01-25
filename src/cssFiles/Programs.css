@@ -9,11 +9,17 @@ flex-direction: column;
 align-items: center;
 padding: 1em;
 text-align: center;
+background-color: rgb(14, 15, 35);
+margin: auto;
+max-width: 110em;
 }
 
 
 #expertise-text-p {
+    font-size: 1.1em;
     padding-top: 3em;
+    line-height: 28px;
+    max-width: 43em;
 }
 
 
@@ -65,6 +71,7 @@ text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.1em;
     }
 
     .expertise-menu h4{
@@ -184,5 +191,7 @@ text-align: center;
         font-size: 4.5vw;
     }
 
-
+    #expertise-text-p {
+        line-height: 8vw;
+    }
 }
