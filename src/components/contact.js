@@ -24,6 +24,8 @@ export default function Contact() {
 
       const data = await response.json();
       console.log(data);
+
+      event.target.reset();
     } catch (error) {
       console.error('Error submitting form:', error);
     }
@@ -37,18 +39,19 @@ export default function Contact() {
           <form id="form" onSubmit={handleSubmit}>
             <input type="text" name="name" id="form-box" placeholder="Name" required/><br/>
             <input type="email" name="email" id="form-box" placeholder="Email" required/><br/>
-            <input type="text" name="subject" id="form-box" placeholder="Subject"/><br/>
+            <input type="text" name="subject" id="form-box" placeholder="Subject" required/><br/>
             <textarea
               name="message"
               id="message-box"
               cols="30"
               rows="10"
-              placeholder="Your message">
+              placeholder="Your message"
+              required>
             </textarea>
             <div className="button-div">
-              <button type="submit" id="SUBMIT">SUBMIT</button>
+              <button type="submit" id="SUBMIT">SEND</button>
               <span id="OR-BUTTON" >OR</span>
-              <span id="SUBMIT">Per E-MAIL</span>
+              <span id="SUBMIT">Contact per E-MAIL</span>
             </div>
           </form>
       </section>

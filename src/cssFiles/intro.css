@@ -7,8 +7,16 @@
     gap: 5em;
     flex-wrap: wrap-reverse;
     padding: 14rem 1em 1em 1rem;
+    background-color: rgb(14, 15, 35);
+    margin: auto;
+    max-width: 110em;
 }
 
+
+.intro-text-dev h4{
+    font-size: 1.5em;
+    padding: 0.3em 0em;
+}
 
 .intro-text-dev h1{
     font-size: 3em;

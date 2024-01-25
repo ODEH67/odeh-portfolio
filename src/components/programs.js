@@ -16,7 +16,10 @@ export default function Programs() {
         <section className="expertise-section" id='About'>
             <div className="expertise-dev">
                 <h1 className="expertise-text-h1">About Me</h1>
-                <p id="expertise-text-p">quick description ahfgh fhsrtzj ssrthr srth rh sr rthftth tzhrthrhr rthrth  rt tjzhh hrththt</p>
+                <p id="expertise-text-p">a Junior Full-Stack Web & App Developer, eager to learn and grow in my role.
+                focusing primarily on Front-End development with a foundational understanding of Back-End technologies to facilitate seamless teamwork.
+                My skill set includes:
+                </p>
                 <ul className="expertise-menu">
                     <div id="expertise-row-1">
                             <h4>Frontend :</h4>
