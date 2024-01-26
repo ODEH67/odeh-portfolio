@@ -1,0 +1,77 @@
+.intro-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap-reverse;
+    padding: 14rem 1em 1em 1rem;
+    background-color: rgb(14, 15, 35);
+    margin: auto;
+    max-width: 110em;
+}
+
+
+.intro-text-dev h4{
+    font-size: 1.5em;
+    padding: 0.3em 0em;
+}
+
+.intro-text-dev h1{
+    font-size: 3em;
+}
+
+.intro-text-dev p{
+    font-weight: 300;
+    font-size: 0.9em;
+    padding-top: 0.5em;
+}
+
+.intro-photo {
+    width: 26em;
+}
+
+
+#span-special-color{
+    color: rgb(0, 249, 224);
+}
+
+
+@media screen and (max-width: 831px) {
+
+    .intro-photo {
+        width: 20em;
+    }
+
+    .intro-section {
+        padding-top: 12em;
+        gap: 1em;
+    }
+}
+
+
+@media screen and (max-width: 671px) {
+    .intro-section {
+        gap: 0em;
+    }
+
+    .intro-text-dev {
+        position: absolute;
+        bottom: -9.5em;
+        
+    }
+
+    .intro-photo {
+        width: 16em;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .intro-section{
+        font-size: 4.5vw;
+    }
+
+}
