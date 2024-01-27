@@ -24,7 +24,7 @@ export default function Contact() {
       });
 
       const data = await response.json();
-      console.log(data);
+      console.log("email response",data);
 
       event.target.reset();
     } catch (error) {
