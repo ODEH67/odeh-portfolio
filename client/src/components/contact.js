@@ -15,7 +15,7 @@ export default function Contact() {
     
 
     try {
-      const response = await fetch('https://portfolio-server-mhcs.onrender.com/contact', {
+      const response = await fetch(process.env.REACT_APP_SERVER_API_URL + '/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
