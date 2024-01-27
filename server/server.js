@@ -13,7 +13,8 @@ const corsoptions= {
     origin:
         process.env.NODE_ENV === "production"
         ? process.env.CLIENT
-        : "http://localhost:3000"
+        : "http://localhost:3000",
+        optionsSuccessStatus: 204,
 }
 
 dotenv.config();
