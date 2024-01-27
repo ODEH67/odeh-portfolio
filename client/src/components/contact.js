@@ -1,4 +1,5 @@
 import "../cssFiles/contact.css"
+import {Link} from "react-router-dom"
 
 export default function Contact() {
 
@@ -51,7 +52,9 @@ export default function Contact() {
             <div className="button-div">
               <button type="submit" id="SUBMIT">SEND</button>
               <span id="OR-BUTTON" >OR</span>
-              <span id="SUBMIT">Contact per E-MAIL</span>
+              <span  id="SUBMIT">
+              <Link to={`mailto:?to=ahmadodeh67gt@gmail.com&subject=Email%20aus%20dem%20Portfolio`} id="EMAIL" >Contact per E-MAIL</Link>
+              </span>
             </div>
           </form>
       </section>

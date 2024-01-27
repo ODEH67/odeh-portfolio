@@ -7,17 +7,14 @@ return (
     <section className="footer-section">
         <hr className="footer-separator"/>
             <div className="footer-div">
-            <span id='footer-head'>Applications are open for YC Summer 2023</span>
-                <span className="footer_NavLinks">
-                    <NavLink to="https://news.ycombinator.com/newsguidelines.html" >Guidelines</NavLink> | 
-                    <NavLink to="https://news.ycombinator.com/newsfaq.html" >FAQ</NavLink> | 
-                    {/* <NavLink to="#" >Lists</NavLink> |  */}
-                    <NavLink to="https://github.com/HackerNews/API" target="_blank">API</NavLink> | 
-                    <NavLink to="https://news.ycombinator.com/security.html">Security</NavLink> | 
-                    <NavLink to="https://www.ycombinator.com/legal/" target="_blank">Legal</NavLink> | 
-                    <NavLink to="https://www.ycombinator.com/apply/" target="_blank">Apply to YC</NavLink> | 
-                    <NavLink to="mailto:hn@ycombinator.com" target="_blank">Contact</NavLink>
-                </span>
+            <span id='footer-head'>This portfolio made by Odeh 2023</span>
+            {/*     <span className="footer_NavLinks">
+                    <NavLink to="https://news.ycombinator.com/newsguidelines.html" >FB</NavLink> | 
+                    <NavLink to="https://news.ycombinator.com/newsfaq.html" >X</NavLink> | 
+                    <NavLink to="https://github.com/HackerNews/API" target="_blank">Instagram</NavLink> | 
+                    <NavLink to="https://news.ycombinator.com/security.html">Tiktok</NavLink> | 
+                    <NavLink to="https://www.ycombinator.com/legal/" target="_blank">LinkedIn</NavLink> |
+                </span>*/}
             </div>
         </section>
 )
