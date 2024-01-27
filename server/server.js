@@ -6,8 +6,7 @@ const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 
 const app = express();
-const PORT = process.env.SERVER_PORT || 3001;  
-// This is the only declaration you need
+
 
 const corsoptions= {
     origin:
@@ -57,6 +56,6 @@ app.post('/contact', async (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(process.env.SERVER_PORT, () => {
+    console.log(`Server is running on port ${process.env.SERVER_PORT}`);
 });
