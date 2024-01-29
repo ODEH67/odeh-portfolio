@@ -1,0 +1,40 @@
+{
+   "navbar": {
+      "home": "Startseite",
+      "about": "Über",
+      "projects": "Projekte",
+      "cv": "Lebenslauf",
+      "contact": "Kontakt"
+   },
+   "intro": {
+      "hello": "Hallo",
+      "name": "Ich bin",
+      "job": "Web <Dev>"
+   },
+   "about": {
+      "title": "Über mich",
+      "text": "Ein Junior Full-Stack Web- und App-Entwickler, bestrebt zu lernen und mich in meiner Rolle weiterzuentwickeln. Ich konzentriere mich hauptsächlich auf die Front-End-Entwicklung mit einem grundlegenden Verständnis von Back-End-Technologien, um eine reibungslose Teamarbeit zu ermöglichen. Mein Fähigkeiten umfassen:"
+   },
+   "projects": {
+      "title": "Projects",
+      "agency" : "Eine minimalistische Agentur-Website, gestaltet während der Anfänge meiner Lernreise.HTML, CSS",
+      "todo" : "Eine unkomplizierte ToDo-Liste-Website, die entwickelt wurde, um Aufgaben mühelos zu notieren. HTML, CSS, React, JS",
+      "cyber" : " Eine Nachbildung der renommierten Hacker News-Plattform, die stets die neuesten Nachrichten aus der Welt der Geeks präsentiert. HTML, CSS, React, JS,API",
+      "tweetX" : "Eine einfache Interpretation der beliebten X-Plattform (Twitter). Drücke und teile deine Gedanken nahtlos aus. HTML, CSS,JS, React)",
+      "ip" : "Erkunde deinen aktuellen Standort anhand deiner IP-Adresse oder Geolokation. Es bietet zusätzliche Funktionen für ein umfassendes Erlebnis in Bezug auf den Standort. HTML, CSS,JS, React, LeafLet, API",
+      "cook-book" : "Entdecke und kuratiere deine Lieblingsgerichte zusammen mit ihren Zutaten. HTML, CSS, React, JS, ExpressJS, NodeJS, MongoDB, mongoose",
+      "post" : "hnologies to facilitate seamless teamwork. My skill set includes:"
+   },
+   "contact": {
+      "title": "Kontaktiere mich",
+      "subject": "Subjekt",
+      "message": "Deine message",
+      "send": "Senden",
+      "sending": "Wird gesendet...",
+      "sent": "Gesendet!",
+      "or": "ODER",
+      "email": "Email schreiben"
+   },
+   "footer": "Diese Portfolio wurde von Odeh gestellt 2023"
+}
+

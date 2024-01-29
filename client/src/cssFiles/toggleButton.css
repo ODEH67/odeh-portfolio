@@ -1,0 +1,23 @@
+.ToggleButton {
+    cursor: pointer;
+}
+
+
+.ToggleButton2{
+    display: none;
+}
+
+
+@media screen and (max-width: 830px) {
+    
+    .ToggleButton2{
+        display: block;
+        color: black;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .ToggleButton {
+        display: none;
+    }
+}

@@ -1,83 +1,106 @@
 import "../cssFiles/projects.css"
-
-import Html from '../img/html.png';
-import Css from '../img/css.png';
-import JavaScript from '../img/JavaScript-Logo.png';
-import Reacto from '../img/react.png';
-import NodeJs from '../img/node.png';
-import MongoDB from '../img/mongodb.png';
-import Mongoose from '../img/mongoose.png';
-import ExpressJs from '../img/express-logo.png';
-
+import { NavLink } from 'react-router-dom';
+import Agency from '../img/Agency.png';
+import CookBook from '../img/cook-book.png';
+import IP_ADress from '../img/IP-adress.png';
+import List from '../img/Lista.png';
+import TweeX from '../img/tweeX.png';
+import Cyber from '../img/Cyber-rePort.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
 
+    const { t } = useTranslation();
 
     return (
         <section className="projects-section" id="Projects">
             <div className="projects-dev">
-                <h1 className="projects-text-h1">Projects</h1>
+                <h1 className="projects-text-h1">{t('projects.title')}</h1>
                 {/* <p id="projects-text-p">quick description ahfgh fhsrtzj ssrthr srth rh sr rthftth tzhrthrhr rthrth  rt tjzhh hrththt</p> */}
                 <ul className="projects-menu">
                     <div className="projects-row-1">
                         <li id="projects-table-1">
-                            <div>
-                                <img src={Html} alt="Html"/>
-                                <h4>Creative-Agency</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem,sequi This Website was made by Odeh</p>
+                            <NavLink
+                                to={"https://odeh67.github.io/Creative-Agency/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={Agency} alt="Agency"/>
+                                <h4>Creative Agency</h4>
+                            </NavLink>
+                            <p>{t('projects.agency')}</p>
                         </li>
                         <li id="projects-table-2">
-                            <div>
-                                <img src={Css} alt="Css"/>
-                                <h4>Cook-Book-HTML</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
+                            <NavLink
+                                to={"https://odeh67.github.io/IP-ADRESS-API/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={IP_ADress} alt="IP_ADress"/>
+                                <h4>Where am I</h4>
+                            </NavLink>
+                            <p>{t('projects.ip')}</p>
                         </li>
                         <li id="projects-table-3">
-                            <div>
-                                <img src={JavaScript} alt="JavaScript"/>
-                                <h4>ToDo_List</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
+                            <NavLink
+                                to={"https://cook-book-client.vercel.app/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={CookBook} alt="CookBook"/>
+                                <h4>Coding Food</h4>
+                            </NavLink>
+                            <p>{t('projects.cook-book')}</p>
                         </li>
-                        <li id="projects-table-4">
+                        {/* <li id="projects-table-4">
                             <div>
                                 <img src={Reacto} alt="React"/>
                                 <h4>React</h4>
                             </div>
                             <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
-                        </li>
+                        </li> */}
                     </div>
                     <div className="projects-row-2">
                         <li id="projects-table-5">
-                            <div>
-                                <img src={NodeJs} alt="NodeJs"/>
-                                <h4>ToDo_List_React</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
+                            <NavLink
+                                to={"https://mini-tweety.vercel.app/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={TweeX} alt="TweeX"/>
+                                <h4>tweeX</h4>
+                            </NavLink>
+                            <p>{t('projects.tweetX')}</p>
                         </li>
                         <li id="projects-table-6">
-                            <div>
-                                <img src={MongoDB} alt="MongoDB"/>
-                                <h4>Cyber-rePort</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
+                            <NavLink
+                                // to={""}
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={List} alt="List"/>
+                                <h4>there is a LIST!</h4>
+                            </NavLink>
+                            <p>{t('projects.todo')}</p>
                         </li>
                         <li id="projects-table-7">
-                            <div id="Contact">
-                                <img src={Mongoose} alt="Mongoose"/>
-                                <h4>Cook-Book-React</h4>
-                            </div>
-                            <p>This Website was made by Odeh Lorem,sequi This Website was made by Odeh</p>
+                            <NavLink id="Contact"
+                                to={"https://cyber-re-port.vercel.app/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                <img src={Cyber} alt="Cyber"/>
+                                <h4>Cyber-rePort</h4>
+                                </NavLink>
+                            <p>{t('projects.cyber')}</p>
                         </li>
-                        <li id="projects-table-8">
+                        {/* <li id="projects-table-8">
                             <div>
                                 <img src={ExpressJs} alt="expressJs"/>
                                 <h4>Express.Js</h4>
                             </div>
                             <p>This Website was made by Odeh Lorem, sequi This Website was made by Odeh</p>
-                        </li>
+                        </li> */}
                     </div>
                 </ul>
             </div>

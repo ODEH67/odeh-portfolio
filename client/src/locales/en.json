@@ -1,0 +1,40 @@
+{
+   "navbar": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "cv": "C.V",
+      "contact": "Contact"   
+   },
+   "intro": {
+      "hello": "Hello",
+      "name": "I'm",
+      "job": "Web <Dev>"
+   },
+   "about": {
+      "title": "About Me",
+      "text": "a Junior Full-Stack Web & App Developer, eager to learn and grow in my role. focusing primarily on Front-End development with a foundational understanding of Back-End technologies to facilitate seamless teamwork. My skill set includes:"
+   },
+   "projects": {
+      "title": "Projects",
+      "agency" : "A minimalist agency website, crafted during the early stages of my learning journey.HTML, CSS",
+      "todo" : "A straightforward ToDo list website designed to help to jot down tasks effortlessly. HTML, CSS, React, JS",
+      "cyber" : "An emulation of the renowned Hacker News platform, delivering the latest in geek news. HTML, CSS, React, JS,API",
+      "tweetX" : "A simple rendition of the popular X platform (Twitter) . Express & post your thoughts seamlessly. HTML, CSS,JS, React)",
+      "ip" : "Explore your current location using your IP address or geo-location. offers additional features. HTML, CSS,JS, React, LeafLet, API",
+      "cook-book" : "Discover and curate your favorite foods along with their ingredients. HTML, CSS, React, JS, ExpressJS, NodeJS, MongoDB, mongoose",
+      "post" : "hnologies to facilitate seamless teamwork. My skill set includes:"
+   },
+   "contact": {
+      "title": "Contact me",
+      "subject": "Subject",
+      "message": "Your message",
+      "send": "Send",
+      "sending": "Sending...",
+      "sent": "Sent!",
+      "or": "OR",
+      "email": "Write an Email"
+   },
+   "footer": "This portfolio made by Odeh 2023"
+
+   }

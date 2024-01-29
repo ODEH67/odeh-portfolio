@@ -7,18 +7,19 @@ import MongoDB from '../img/mongodb.png';
 import Mongoose from '../img/mongoose.png';
 import ExpressJs from '../img/express-logo.png';
 import '../cssFiles/Programs.css';
+import { useTranslation } from 'react-i18next';
 
 
 export default function Programs() {
 
+    const { t } = useTranslation();
 
     return (
         <section className="expertise-section" id='About'>
             <div className="expertise-dev">
-                <h1 className="expertise-text-h1">About Me</h1>
-                <p id="expertise-text-p">a Junior Full-Stack Web & App Developer, eager to learn and grow in my role.
-                focusing primarily on Front-End development with a foundational understanding of Back-End technologies to facilitate seamless teamwork.
-                My skill set includes:
+                <h1 className="expertise-text-h1">{t('about.title')}</h1>
+                <p id="expertise-text-p">
+                {t('about.text')}
                 </p>
                 <ul className="expertise-menu">
                     <div id="expertise-row-1">

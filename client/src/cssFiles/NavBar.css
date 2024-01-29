@@ -102,6 +102,7 @@
     display: none;
 }
 
+
 @media screen and (max-width: 830px) {
 
     .menu-icon {
@@ -167,6 +168,10 @@
 
     .contactBtn2.selected{
         background-color: rgba(0, 255, 229, 0.905);
+    }
+
+    #link-icon{
+        display: none;
     }
 
     }

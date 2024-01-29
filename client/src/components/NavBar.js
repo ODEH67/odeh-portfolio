@@ -1,4 +1,5 @@
 import '../cssFiles/NavBar.css';
+import '../cssFiles/toggleButton.css';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Logo from "../img/logo.png";
@@ -6,17 +7,29 @@ import {TbMessage} from "react-icons/tb";
 import {TiThMenu} from "react-icons/ti";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n.js';
+import Toggle from "./toggleButton";
+
 
 
 export default function NavBar() {
 
   const [selectedNavText, setSelectedNavText] = useState("");
-  // const [isProjectsActive, setIsProjectsActive] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [IsToggled, setIsToggled] = useState(true);
+  // const [isProjectsActive, setIsProjectsActive] = useState(false);
+
   const menuRef = useRef(null);
+  
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleSwitch = () => {
+    setIsToggled(!IsToggled);
   };
 
   useEffect(() => {
@@ -55,7 +68,7 @@ export default function NavBar() {
                 duration={600}
                 onSetActive={() => setSelectedNavText("")}
                 >
-                  Home
+                  {t('navbar.home')}
               </Link>
             </li>
             <li>
@@ -70,7 +83,7 @@ export default function NavBar() {
                 duration={600}
                 onSetActive={() => setSelectedNavText("")}
                 >
-                  About
+                  {t('navbar.about')}
               </Link>
             </li>
             <li>
@@ -87,7 +100,7 @@ export default function NavBar() {
                 onSetActive={() => setSelectedNavText("Projects")}
                 onSetInactive={() => setSelectedNavText("")}
                 >
-                  Projects
+                  {t('navbar.projects')}
               </Link>
             </li>
             <li>
@@ -98,8 +111,9 @@ export default function NavBar() {
                 to={"https://drive.google.com/file/d/1mB89NfKLp53L2fu5W-bc1x6SDpqKJ_ay/view?usp=sharing"}
                 target="_blank"
                 rel="noopener noreferrer"
-                >C.V
-                <FaExternalLinkAlt style={{fontSize: "13px", marginLeft: '8px'}}/>
+                >
+                {t('navbar.cv')}
+                <FaExternalLinkAlt id="link-icon" style={{fontSize: "13px", marginLeft: '8px'}}/>
               </NavLink>
             </li>
             <li >
@@ -112,10 +126,13 @@ export default function NavBar() {
                 onSetActive={() => setSelectedNavText("")}
                 >
               <span className="contactBtn2">
-                Contact
+                {t('navbar.contact')}
               </span>
               </Link>
             </li>
+            <span className="ToggleButton2">
+            <Toggle isToggled={IsToggled} toggleSwitch={toggleSwitch} i18n={i18n}/>
+            </span>
           </ul>
           <Link 
                 className="contactBtn"
@@ -127,8 +144,11 @@ export default function NavBar() {
                 onSetActive={() => setSelectedNavText("")}
                 >
             <TbMessage style={{fontSize: "20px"}}/>
-            Contact
+            {t('navbar.contact')}
           </Link>
+          <span className="ToggleButton">
+            <Toggle isToggled={IsToggled} toggleSwitch={toggleSwitch} i18n={i18n}/>
+            </span>
         </nav>
       </header>
     </div>

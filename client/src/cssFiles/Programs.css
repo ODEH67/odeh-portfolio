@@ -62,12 +62,13 @@ max-width: 110em;
     }
 
     .expertise-img-div-1, .expertise-img-div-2 {
-    border-bottom: 2px solid aquamarine;
+    border-bottom: 3px solid rgba(0, 255, 229, 0.905);
     }
 
 
     .expertise-menu {
         padding-top: 3em;
+        padding-right: 7em;
         display: flex;
         flex-direction: column;
         align-items: center;
