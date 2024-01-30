@@ -4,7 +4,7 @@ import JavaScript from '../img/JavaScript-Logo.png';
 import Reacto from '../img/react.png';
 import NodeJs from '../img/node.png';
 import MongoDB from '../img/mongodb.png';
-import Mongoose from '../img/mongoose.png';
+import Cloudinary from '../img/cloudinary3.png';
 import ExpressJs from '../img/express-logo.png';
 import '../cssFiles/Programs.css';
 import { useTranslation } from 'react-i18next';
@@ -51,15 +51,15 @@ export default function Programs() {
                                     <img id='img5' src={NodeJs} alt="NodeJs"/>
                                 </div>
                                 <div className='expertise-img-div-3'>
-                                    <img id='img6' src={MongoDB} alt="MongoDB"/>
+                                    <img id='img8' src={ExpressJs} alt="expressJs"/>
                                 </div>
                             </li>
                             <li id="expertise-table-4">
                                 <div className='expertise-img-div-4'>
-                                    <img id='img7' src={Mongoose} alt="Mongoose"/>
+                                    <img id='img7' src={Cloudinary} alt="Mongoose"/>
                                 </div>
                                 <div className='expertise-img-div-4'>
-                                    <img id='img8' src={ExpressJs} alt="expressJs"/>
+                                    <img id='img6' src={MongoDB} alt="MongoDB"/>
                                 </div>
                             </li>
                         </div>
