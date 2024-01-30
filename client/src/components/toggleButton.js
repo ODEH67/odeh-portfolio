@@ -86,13 +86,13 @@ const LanguageSwitch = styled(Switch)(({ theme }) => ({
 
                 // Responsive styles circle position
             '@media (max-width: 832px)': {
-                left: 3,
+                left: 2,
                 top: 1,
             },
     
-            '@media (max-width: 350px)': {
-                left: 4,
-                top: 2,
+            '@media (max-width: 360px)': {
+                left: 2,
+                top: 0,
             },
                 
     },
