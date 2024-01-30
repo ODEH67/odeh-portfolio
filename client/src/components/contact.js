@@ -2,9 +2,23 @@ import "../cssFiles/contact.css"
 import {Link} from "react-router-dom"
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ClipLoader from 'react-spinners/ClipLoader';
+import useFormLocalStorage from './local-storage';
 
 
 export default function Contact() {
+
+  const initialFormData = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  };
+
+  const [formData, setFormData] = useFormLocalStorage(
+    initialFormData,
+    'formData'
+  );
 
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
@@ -45,6 +59,8 @@ export default function Contact() {
       }, 3000);
 
       event.target.reset();
+
+      setFormData(initialFormData); // Reset the form data
     }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -59,20 +75,42 @@ export default function Contact() {
       <section className="contact-section">
           <h2 id="form-title">{t('contact.title')}</h2>
           <form id="form" onSubmit={handleSubmit}>
-            <input type="text" name="name" id="form-box" placeholder="Name" required/><br/>
-            <input type="email" name="email" id="form-box" placeholder="Email" required/><br/>
-            <input type="text" name="subject" id="form-box" placeholder={t('contact.subject')} required/><br/>
+            <input type="text" name="name" id="form-box" placeholder="Name" required 
+            // each input and txtarea has the next two lines (Value, onChange) are for local storage, not to submit
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}/>
+            <br/>
+            <input type="email" name="email" id="form-box" placeholder="Email" required 
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
+            <br/>
+            <input type="text" name="subject" id="form-box" placeholder={t('contact.subject')} required 
+              value={formData.subject}
+              onChange={(e) => setFormData({ ...formData, subject: e.target.value })}/>
+            <br/>
             <textarea
               name="message"
               id="message-box"
               cols="30"
               rows="10"
               placeholder={t('contact.message')}
-              required>
+              required
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              >
             </textarea>
             <div className="button-div">
               <button type="submit" id="SUBMIT" disabled={loading}>
-            {loading ? t('contact.sending') : sent ? t('contact.sent') : t('contact.send')}</button>
+            {loading ? t('contact.sending')
+              : sent ? t('contact.sent') : t('contact.send')}
+            {loading && (  
+              <ClipLoader
+                color="#36d7b7"
+                cssOverride={{padding: "0", margin: "0"}}
+                size={12}
+                speedMultiplier={1}
+            /> )}
+              </button>
               <span id="OR-BUTTON" >{t('contact.or')}</span>
               <span  id="SUBMIT">
               <Link to={`mailto:?to=ahmadodeh67gt@gmail.com&subject=Email%20aus%20dem%20Portfolio`} id="EMAIL" >{t('contact.email')}</Link>

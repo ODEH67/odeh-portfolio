@@ -100,7 +100,14 @@
 #form-box {
     min-height: 2em;
 }
+
+#SUBMIT{
+    padding: 0.5em 1em;
 }
+
+}
+
+
 
 @media (max-width: 350px) {
     .contact-section {

@@ -17,12 +17,12 @@
    },
    "projects": {
       "title": "Projects",
-      "agency" : "Eine minimalistische Agentur-Website, gestaltet während der Anfänge meiner Lernreise.HTML, CSS",
-      "todo" : "Eine unkomplizierte ToDo-Liste-Website, die entwickelt wurde, um Aufgaben mühelos zu notieren. HTML, CSS, React, JS",
-      "cyber" : " Eine Nachbildung der renommierten Hacker News-Plattform, die stets die neuesten Nachrichten aus der Welt der Geeks präsentiert. HTML, CSS, React, JS,API",
-      "tweetX" : "Eine einfache Interpretation der beliebten X-Plattform (Twitter). Drücke und teile deine Gedanken nahtlos aus. HTML, CSS,JS, React)",
-      "ip" : "Erkunde deinen aktuellen Standort anhand deiner IP-Adresse oder Geolokation. Es bietet zusätzliche Funktionen für ein umfassendes Erlebnis in Bezug auf den Standort. HTML, CSS,JS, React, LeafLet, API",
-      "cook-book" : "Entdecke und kuratiere deine Lieblingsgerichte zusammen mit ihren Zutaten. HTML, CSS, React, JS, ExpressJS, NodeJS, MongoDB, mongoose",
+      "agency" : "Eine minimalistische Agentur-Website, gestaltet während der Anfänge meiner Lernreise.",
+      "todo" : "Eine unkomplizierte ToDo-Liste-Website, die entwickelt wurde, um Aufgaben mühelos zu notieren.",
+      "cyber" : " Eine Nachbildung der renommierten Hacker News-Plattform, die stets die neuesten Nachrichten aus der Welt der Geeks präsentiert.",
+      "tweetX" : "Eine einfache Interpretation der beliebten X-Plattform (Twitter). Drücke und teile deine Gedanken nahtlos aus.",
+      "ip" : "Erkunde deinen aktuellen Standort anhand deiner IP-Adresse oder Geolokation, & noch zusätzliche Funktionen.",
+      "cook-book" : "Entdecke und kuratiere deine Lieblingsgerichte zusammen mit ihren Zutaten.",
       "post" : "hnologies to facilitate seamless teamwork. My skill set includes:"
    },
    "contact": {
@@ -35,6 +35,6 @@
       "or": "ODER",
       "email": "Email schreiben"
    },
-   "footer": "Diese Portfolio wurde von Odeh gestellt 2023"
+   "footer": "Von Odeh gestellt 2024"
 }
 

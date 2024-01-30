@@ -68,7 +68,7 @@ max-width: 110em;
 
     .expertise-menu {
         padding-top: 3em;
-        padding-right: 7em;
+        padding-right: 3em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -111,8 +111,11 @@ max-width: 110em;
 
 }
 
-@media (max-width: 799px) {
+@media (max-width: 982px) {
 
+    .expertise-menu {
+        margin-right: 8em;
+    }
     #expertise-table-2 {
         border-bottom: 1px solid rgba(255, 255, 255, 0.905);
     }
@@ -137,12 +140,12 @@ max-width: 110em;
     }
 
     .expertise-menu h4{
-        min-width: 11em;
-        text-align: end;
-        padding-right: none;
-        margin-left: 5em;
+        padding-right: 0;
+        min-width: 18em;
     }
 }
+
+
 
 @media (max-width: 671px) {
 
@@ -158,7 +161,6 @@ max-width: 110em;
     }
 
     .expertise-dev-1,.expertise-dev-2 {
-        
         flex-direction: column;
     }
 
@@ -168,6 +170,11 @@ max-width: 110em;
         margin-left: 0;
         white-space: nowrap;
 
+    }
+
+    .expertise-menu {
+        margin-right: 0;
+        padding-right: 0;
     }
 }
 

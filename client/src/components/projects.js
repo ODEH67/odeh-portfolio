@@ -6,7 +6,19 @@ import IP_ADress from '../img/IP-adress.png';
 import List from '../img/Lista.png';
 import TweeX from '../img/tweeX.png';
 import Cyber from '../img/Cyber-rePort.png';
+
+// import Html from '../img/JavaScript-Logo.png';
+// import Css from '../img/css.png';
+// import Js from '../img/JavaScript-Logo.png';
+// import Reacti from '../img/react.png';
+// import Ejs from '../img/express-logo.png';
+// import Mongoose from '../img/mongoose.png';
+// import Node from '../img/node.png';
+// import Mongodb from '../img/mongodb.png';
+// import LeafLet from '../img/LeafLet.png';
+
 import { useTranslation } from 'react-i18next';
+
 
 export default function Projects() {
 
@@ -29,6 +41,10 @@ export default function Projects() {
                                 <h4>Creative Agency</h4>
                             </NavLink>
                             <p>{t('projects.agency')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
                         </li>
                         <li id="projects-table-2">
                             <NavLink
@@ -40,6 +56,14 @@ export default function Projects() {
                                 <h4>Where am I</h4>
                             </NavLink>
                             <p>{t('projects.ip')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>LeafLet</span>
+                                <span>API</span>
+                            </div>
                         </li>
                         <li id="projects-table-3">
                             <NavLink
@@ -51,6 +75,18 @@ export default function Projects() {
                                 <h4>Coding Food</h4>
                             </NavLink>
                             <p>{t('projects.cook-book')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>ExpressJS</span>
+                                <span>NodeJS</span>
+                                <span>Mongoose</span>
+                                <span>MongoDB</span>
+                                <span>Cloudinary</span>
+                                <span>API</span>
+                            </div>
                         </li>
                         {/* <li id="projects-table-4">
                             <div>
@@ -68,9 +104,16 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                                 >
                                 <img src={TweeX} alt="TweeX"/>
-                                <h4>tweeX</h4>
+                                <h4>TweeX</h4>
                             </NavLink>
                             <p>{t('projects.tweetX')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>API</span>
+                            </div>
                         </li>
                         <li id="projects-table-6">
                             <NavLink
@@ -79,9 +122,15 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                                 >
                                 <img src={List} alt="List"/>
-                                <h4>there is a LIST!</h4>
+                                <h4>There is a LIST!</h4>
                             </NavLink>
                             <p>{t('projects.todo')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
                         </li>
                         <li id="projects-table-7">
                             <NavLink id="Contact"
@@ -93,6 +142,13 @@ export default function Projects() {
                                 <h4>Cyber-rePort</h4>
                                 </NavLink>
                             <p>{t('projects.cyber')}</p>
+                            <div className="projects-table-programs">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>API</span>
+                            </div>
                         </li>
                         {/* <li id="projects-table-8">
                             <div>
