@@ -62,7 +62,6 @@ export default function Projects() {
                                 <span>JavaScript</span>
                                 <span>React</span>
                                 <span>LeafLet</span>
-                                <span>API</span>
                             </div>
                         </li>
                         <li id="projects-table-3">
@@ -81,11 +80,8 @@ export default function Projects() {
                                 <span>JavaScript</span>
                                 <span>React</span>
                                 <span>ExpressJS</span>
-                                <span>NodeJS</span>
-                                <span>Mongoose</span>
                                 <span>MongoDB</span>
                                 <span>Cloudinary</span>
-                                <span>API</span>
                             </div>
                         </li>
                         {/* <li id="projects-table-4">
@@ -112,7 +108,6 @@ export default function Projects() {
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                                 <span>React</span>
-                                <span>API</span>
                             </div>
                         </li>
                         <li id="projects-table-6">
@@ -147,7 +142,6 @@ export default function Projects() {
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                                 <span>React</span>
-                                <span>API</span>
                             </div>
                         </li>
                         {/* <li id="projects-table-8">
