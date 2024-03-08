@@ -112,8 +112,8 @@ export default function Projects() {
                         </li>
                         <li id="projects-table-6">
                             <NavLink
-                                // to={""}
-                                // target="_blank"
+                                to={"https://list-a-js.vercel.app/"}
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 >
                                 <img src={List} alt="List"/>
