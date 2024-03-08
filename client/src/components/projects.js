@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Agency from '../img/Agency.png';
 import CookBook from '../img/cook-book.png';
 import IP_ADress from '../img/IP-adress.png';
-import List from '../img/Lista.png';
+import List from '../img/there is a list.png';
 import TweeX from '../img/tweeX.png';
 import Cyber from '../img/Cyber-rePort.png';
 
