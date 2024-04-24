@@ -108,7 +108,7 @@ export default function NavBar() {
                 className="NavText"
                 // className={`NavText${selectedNavText === 'Lebenslauf' ? ' selected' : ''}`} 
                 // onClick={() => setSelectedNavText('Lebenslauf')}
-                to={"https://drive.google.com/file/d/1mB89NfKLp53L2fu5W-bc1x6SDpqKJ_ay/view?usp=sharing"}
+                to={"https://drive.google.com/file/d/14--enosc3GwKGgblr3wG4uyjN6ph6iUC/view?usp=sharing"}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
