@@ -108,7 +108,8 @@ export default function NavBar() {
                 className="NavText"
                 // className={`NavText${selectedNavText === 'Lebenslauf' ? ' selected' : ''}`} 
                 // onClick={() => setSelectedNavText('Lebenslauf')}
-                to={"https://drive.google.com/file/d/14--enosc3GwKGgblr3wG4uyjN6ph6iUC/view?usp=sharing"}
+                // to={"https://drive.google.com/file/d/14--enosc3GwKGgblr3wG4uyjN6ph6iUC/view?usp=sharing"}
+                to={"https://drive.google.com/file/d/188Axl-FiEalSj7C9FtugNLYiL36FyBsT/view?usp=drive_link"}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
